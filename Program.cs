@@ -54,7 +54,9 @@ namespace LinqHW
                     .Where(x => (x.Length < 8 && x.Width > 14))
                     .Select(x => x.WindowName);
 
-            var points3 = webpages.SelectMany(x => x.Elements.Select(y => y.Equals();
+            WebPageHelper helper = new WebPageHelper();
+
+            var x = helper.GetUniqueElements(webpages);
         }
     }
 }

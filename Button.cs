@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqHW
 {
-    class Button : Element
+    public class Button : Element
     {
         public string ButtonActivity { get; set; }
 

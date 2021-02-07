@@ -2,7 +2,7 @@
 
 namespace LinqHW
 {
-    class WebPage 
+    public class WebPage 
      {
         public List<Element> Elements { get; set; }
 

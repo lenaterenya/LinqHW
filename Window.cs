@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqHW
 {
-    class Window : Element
+   public class Window : Element
     {
         public string WindowName { get; set; }
 

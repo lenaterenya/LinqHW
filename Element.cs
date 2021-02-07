@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqHW
 {
-       class Element
+    public   class Element
     {
         public Point LeftUpperLocation { get; set; }
         public int Width { get; set; }
@@ -15,7 +15,12 @@ namespace LinqHW
             return string.Equals(this.GetHashCode(), obj?.GetHashCode());
         }
 
-        
+        public override int GetHashCode()
+        {
+
+            return Length.GetHashCode() + Width.GetHashCode() + LeftUpperLocation.X.GetHashCode() + LeftUpperLocation.Y.GetHashCode()
+                   + GetType().GetHashCode();
+        }
         public Element(Point location, int width, int length)
         {
             LeftUpperLocation = location;

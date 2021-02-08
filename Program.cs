@@ -46,17 +46,20 @@ namespace LinqHW
                 })
             };
 
-            var points = webpages.Select(x => x.Elements.Select(x => (x.LeftUpperLocation, x.Width, x.Length)).OrderByDescending(x => x.LeftUpperLocation)).ToList();
+            var points = webpages.Select(x =>
+                x.Elements.Select(x => (x.LeftUpperLocation, x.Width, x.Length))
+                    .OrderByDescending(x => x.LeftUpperLocation)).ToList();
 
             var points2 = webpages.Select(x => x.Elements
                     .Where(x => (x is Window)))
-                    .Select(x => (x as Window))
-                    .Where(x => (x.Length < 8 && x.Width > 14))
-                    .Select(x => x.WindowName);
+                .Select(x => (x as Window))
+                .Where(x => (x.Length < 8 && x.Width > 14))
+                .Select(x => x.WindowName);
 
             WebPageHelper helper = new WebPageHelper();
 
             var x = helper.GetUniqueElements(webpages);
+
         }
     }
 }

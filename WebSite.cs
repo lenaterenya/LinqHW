@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqHW
 {
-   class WebSite
+   public class WebSite
     {
         public List<WebPage> WebPages { get; set; }
 

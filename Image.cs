@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqHW
 {
-  class Image : Element
+    public class Image : Element
     {
         public string ImageType { get; set; }
 
@@ -12,11 +12,6 @@ namespace LinqHW
         {
             ImageType = imageType;
         }
-        public override int GetHashCode()
-        {
-
-            return ImageType.GetHashCode();
-
-        }
+       
     }
 }

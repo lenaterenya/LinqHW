@@ -12,11 +12,6 @@ namespace LinqHW
         {
             ImageType = imageType;
         }
-        public override int GetHashCode()
-        {
-
-            return ImageType.GetHashCode();
-
-        }
+       
     }
 }

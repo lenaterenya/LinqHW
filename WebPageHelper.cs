@@ -19,7 +19,7 @@ namespace LinqHW
                 }
                 catch (Exception e)
                 {
-                    //Console.WriteLine(element.Length + " " + element.Width + " " + element.GetType() + " " + element.GetHashCode());
+                    //  Console.WriteLine(element.Length + " " + element.Width + " " + element.GetType() + " " + element.GetHashCode());
                     continue;
                 }
             }

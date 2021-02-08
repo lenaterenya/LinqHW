@@ -15,7 +15,7 @@ namespace LinqHW
             {
                 new WebPage(new List<Element>
                 {
-                    new Button(new Point(3, 12), 5, 7, "yes"),
+                    new Button(new Point(41, 54), 8, 14, "yes"),
                     new Window(new Point(6, 14), 25, 40, "Home"),
                     new Menu(new Point(-5, 14), 23, 19),
                     new Image(new Point(11, 23), 10, 2, ".jpeg"),

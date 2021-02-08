@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqHW
 {
-     class Point
+    public class Point
     {
         public int X { get; set; }
         public int Y { get; set; }
